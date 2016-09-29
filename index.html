@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aaron Endsley-Front End Web Developer</title>
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Russo+One|Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div  class="navbar navbar-fixed-top navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li id="first" class="active" onclick="ScrollToTop()"><a href="#top">Home</a></li>
+            <li onclick="scrollTolink('#about')"><a href="#about">About Me</a></li>
+            <li onclick="scrollTolink('#portfolio')"><a href="#portfolio">Portfolio</a></li>
+            <li onclick="scrollTolink('#github')"><a href="#github">GitHub</a></li>
+            <li onclick="scrollTolink('#social')"><a href="#social">Social</a></li>
+        </ul>
+    </div>
+        </div>
+</div>
+
+
+<div class="jumbotron" id="#top">
+    <h1>Aaron Endsley: Frontend Web Developer</h1>
+
+    <a href="Aarons-Resume-2016-web.pdf" download> <button type="button" class="btn btn-default downloadResume" onclick="downloadResume()" >Download Resume</button></a>
+    <div id="downloadMessage"></div>
+</div>
+<section id="about">
+    <div class="selfPortrait">
+        <img src="images/_MG_7901%20copy%20copy.png">
+    </div>
+    <h1>I Am A Continuously Self Educated Developer...</h1>
+
+    <p>I love to learn, especially if I am learning anything that pertains to front end web development. I am very interested in Javascript and various JavaScript Frameworks such as: Angular Js, Angular Material, and  Node. Currently I am Working at company called Tre'vo  as IT Help Desk/Junior Developer, where I am learning more about Javascript and Angular JS, I help with various IT related tasks through out the office. </p><h2>I am a Geek!!!</h2><p> In my spare time I enjoy spending time with my wife and children, as well as my family, church family, and friends. I enjoy playing minecraft with my boys, reading comic books, watching Doctor who, Arrow and the Flash, and listening to podcasts ranging from my beliefs to superheroes, I love to read and hope my children will to.  </p> <h2>Things I Would Like To Learn In the Future</h2><p>It goes without saying that when you begin to code and you discover that there are other languages out there that are more capable at creating certain experiences, its hard not to want to learn them while you are learning your first language. I tried ruby once while I was in the early stages of learning javascript, and as a result of not having enough experience programming, It was very hard to learn and I eventually droped the language altogether. So..Here are a few things I would like to learn later on and why
+</p><p>Python: I would like to learn python because of its abilty to be used on multiple platforms and especially on the rasbery pi</p><p>More User Experience: because I came from more of design background (before coding) I have had some courses in User Experience. As I am not able to dive into this right now, this is a subject I would love to get to know more about. I believe that the experience of the user is extremely important not only does it affect the users experience on the site but it also changes the users perception of the company or organization that owns that site. Every product is a message. </p>
+    <hr>
+
+
+
+
+</section>
+<br/>
+<br/>
+<section id="portfolio">
+    <h2>My Past Projects</h2>
+
+
+        <div class="portGroup">
+            <div class="thumbnail">
+                <img src="images/portfolioImages/silver%20spoon/silverSpoon.jpg" alt="..." id="ss">
+                <div class="caption">
+                    <h3>The Silver Spoon Kitchen and bakeshop</h3>
+                    <p>The silver spoon kitchen and bakeshop is in Lawton Oklahoma, this was my first experience writing a website using media queries and using responsive Ideologies</p>
+                    <div class="marginUpButton">
+                         <button type="button" class="btn btn-default marginItUp mobile" onclick="setScreenShot('#ss' ,'images/portfolioImages/silver spoon/responsivess.jpg', '.mobile','.desktop' )">Click For Mobile</button>
+                        <button type="button" class="btn btn-default marginItUp desktop" onclick="setScreenShot('#ss', 'images/portfolioImages/silver%20spoon/silverSpoon.jpg', '.mobile','.desktop')">Click For Desktop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="portGroup">
+        <div class="thumbnail">
+            <img src="images/portfolioImages/maid%20to%20smile/mts.jpg" alt="..." id="mts">
+            <div class="caption">
+                <h3>Maid to Smile</h3>
+                <p>Maid to Smile is a janitorial service in Lawton Oklahoma, This site is a vanilla html, css, and jquery based web site, that uses responsive design techniques</p>
+                <div class="marginUpButton">
+                    <button type="button" class="btn btn-default marginItUp mobileMts" onclick="setScreenShot('#mts','images/portfolioImages/maid%20to%20smile/mtsm.jpg', '.mobileMts', '.desktopMts')">Click For Mobile</button>
+                    <button type="button" class="btn btn-default marginItUp desktopMts" onclick="setScreenShot('#mts','images/portfolioImages/maid%20to%20smile/mts.jpg', '.mobileMts', '.desktopMts')">Click For Desktop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portGroup">
+        <div class="thumbnail">
+            <img src="images/portfolioImages/LuLus/lulus.jpg" alt="..." id="lu">
+            <div class="caption">
+                <h3>Lulus Coffee and Bagel</h3>
+                <p>This site had a fixed width layout and it was created before I knew how to create a responsive web site.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="portGroup">
+        <div class="thumbnail">
+            <img src="images/portfolioImages/FaithWorks/Fw.jpg" alt="..." id="fw">
+            <div class="caption">
+                <h3>FaithWorks</h3>
+                <p>This site was my first real experience using the features in HTML5 and CSS3.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="portGroup">
+        <div class="thumbnail">
+            <img src="images/portfolioImages/trinity/trinity.jpg" alt="..." id="tbc">
+            <div class="caption">
+                <h3>Trinity Baptist Church</h3>
+                <p>This was my first time creating an interface using the CSS box model outside of tutorials or school.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br/>
+<br/>
+<hr>
+<section id="github">
+    <h2>My GitHub Projects</h2>
+    <p>I love to code. I know that you cant learn JavaScript just by doing tutorials and reading books you have to write and debug your own code. My github is where I store all my projects some of them are complete some of them may be ideas that I will come back to later. Please check out all my repositories!  </p>
+
+    <div id="githubRepos"> </div>
+</section>
+<hr>
+<section id="social">
+    <h2>Find Me On Social Media</h2>
+    <div class="well">
+        <p class="text-center"><a href="http://twitter.com/aaronendsley">@aaronendsley on Twitter</a></p>
+        <p class="text-center"><a href="http://github.com/veritasX">@veritasX on Github</a></p>
+        <p class="text-center"><a href="https://www.linkedin.com/in/aaron-endsley-6786aa8a">Linked In:Aaron Endsley</a></p>
+    </div>
+</section>
+<footer><p>&copy; 2016 Aaron Endsley</p></footer>
+<script src="http://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-66026394-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
